@@ -15,6 +15,8 @@
 
 Écrivez la requête SQL pour  :
 
+> Pour réussi cet exercice, utiliser l'excellent site [sql.sh](https://sql.sh/) !
+
 1. Afficher tous les gens dont le nom est Palmer ;
 2. Afficher toutes les femmes ;
 3. Afficher tous les états dont la lettre commence par N ;
