@@ -20,9 +20,19 @@
 - Afficher toutes les femmes ;
 - Afficher tous les États dont la lettre commence par « N » ;
   - Afficher tous les États qui ont un « N » dans leur *country code* ;
+  
 - Afficher tous les emails qui contiennent google ;
+SELECT * FROM `table_mockdata` WHERE `email` LIKE '%google%'
+
+-> Permet de cherche toutes les occurences du mot google dans la colonne email. les % permettent d'afficher les occureces google.
+
   - N'affichez que les personnes dont les emails ne contiennent pas « google » ; 
+
 - Insérer un nouvel utilisateur ;
+
+$sql= 'INSERT INTO `table_mockdata`(`first_name`, `last_name`, `email`, `gender`, `ip_address`, `birth_date`, `zip_code`, `avatar_url`, `state_code`, `country_code`) VALUES ('romain','pois','r.poissonnier@codeur.online','192.168.1.60','male','05/08/91','21000','http://halles-cornouaille.com','21','58000')'
+
+
   - Mettre à jour l'adresse mail du nouvel utilisateur ;
   - Supprimer le nouvel utilisateur ;
 - Afficher le nombre de femmes et d'hommes ;

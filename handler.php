@@ -27,6 +27,7 @@ session_start();
             // Data insertion into the database
             require_once('db-connect.php');
             $sql = 'INSERT INTO table_mockdata(`first_name`, `last_name`, `email`, `gender`, `ip_address`, `birth_date`, `zip_code`, `avatar_url`, `state_code`, `country_code`) VALUES(:first_name, :last_name, :email, :gender, :ip_address, :birth_date, :zip_code, :avatar_url, :state_code, :country_code)';
+            
             $query = $db->prepare($sql);
             $query->bindValue(':first_name', $first_name, PDO::PARAM_STR);
             $query->bindValue(':last_name', $last_name, PDO::PARAM_STR);
